@@ -1,0 +1,23 @@
+<body>
+	<div class="container">
+		<center><h1>Bismillah mainan web lagi hehe</h1></center>
+		<?php
+			$con=mysqli_connect('localhost','root','','bismillahwebgis');
+			// Check connection
+			if (mysqli_connect_errno())
+				{
+				  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+				}
+				
+			$result = mysqli_query($con,'SELECT * FROM uny');
+			$maps = array();
+			while($row = mysqli_fetch_array($result))
+				{
+					$maps[] = $row;
+				}
+			?>			
+		    <!-- <pre><?= json_encode($maps) ?></pre> -->
+			<?= json_encode($maps) ?>
+		<div id="map"></div>
+	</div>
+</body>

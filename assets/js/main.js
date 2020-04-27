@@ -11,17 +11,19 @@ var wet=false;
     //    detectRetina: true
     //});
     // please replace this with your own mapbox token!
-    var token = 'pk.eyJ1IjoiZG9tb3JpdHoiLCJhIjoiY2o0OHZuY3MwMGo1cTMybGM4MTFrM2dxbCJ9.yCQe43DMRqobazKewlhi9w';
+    var token = 'pk.eyJ1IjoieW9nYXN3YXJhODIiLCJhIjoiY2s5aXF6Z2U5MDVjaTNndnkwOGhlajh0YiJ9.8B8Ljfp2nMoY0cpD-2DoEg';
     var mapboxUrl = 'https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/{z}/{x}/{y}@2x?access_token=' + token;
-    var mapboxAttrib = 'Map data © <a href="http://osm.org/copyright">OpenStreetMap</a> contributors. Tiles from <a href="https://www.mapbox.com">Mapbox</a>.';
-    var mapbox = new L.TileLayer(mapboxUrl, {
-        attribution: mapboxAttrib,
-        tileSize: 512,
-        zoomOffset: -1,
-        maxNativeZoom:14,
-        minNativeZoom:14
-    });
 
+    var mapboxAttrib = 'Map data © <a href="http://osm.org/copyright">OpenStreetMap</a> contributors. Tiles from <a href="https://www.mapbox.com">Mapbox</a>. ';
+    var mapbox = new L.TileLayer(mapboxUrl, {
+      attribution: mapboxAttrib,
+      tileSize: 512,
+      zoomOffset: -1,
+      maxNativeZoom:14,
+      minNativeZoom:14
+      
+    });
+  
     var baseMaps = {
         "Mapbox": mapbox,
 

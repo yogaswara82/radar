@@ -365,10 +365,10 @@ function calcu() {
     var e = document.getElementById("single_select");
     var model = e.options[e.selectedIndex].value;
     var waktu = Number(Time(x,speed).toFixed(3));
-    var bbm = Number(BBM(model, x, speed).toFixed(3));
+    var bbm = Number(BBM(model,waktu).toFixed(3));
     console.log(speed*1.852);
     console.log(x);
-    document.getElementById('waktu').value = waktu + ' Menit / '+ 2*waktu + ' Menit untuk PP';
+    document.getElementById('waktu').value = waktu*60 + ' Menit / '+ 2*waktu*60 + ' Menit untuk PP';
     document.getElementById('bbm').value = bbm +' Liter / '+ 2*bbm + ' Liter untuk PP';
 
 };
@@ -387,11 +387,11 @@ function distance(lat1,lon1,lat2,lon2) {
 }
 
 function Time(dis,speed) {
-    var waktu = (dis/(speed*1.852)) * 60;
+    var waktu = (dis/(speed*1.852));
     return waktu;
 }
-function BBM(model,dis,speed) {
-    var bbm = model * dis / speed;
+function BBM(model,waktu) {
+    var bbm = model * waktu;
     console.log(bbm,"Liter");
     bbm = (bbm*0.3) + bbm;
     return bbm;

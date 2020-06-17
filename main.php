@@ -356,16 +356,22 @@
                  <div class="col-md-12">
                     Pilih Mesin :<select id="single_select" class="form-control" name="mesin" required autofocus>
 
-                        <option value="5.110">Mercury 4 stroke (15) TK</option>
-                        <option value="3.785">Mercury 4 stroke (10) TK</option>
-                        <option value="5.110">Envinrude 4 stroke (15) TK</option>
-                        <option value="3.785">Envinrude 4 stroke (10) TK</option>
-                        <option value="4.921" >Honda 4 stroke (15) TK</option>
-                        <option value="3.785">Honda 4 stroke (10) TK</option>
-                        <option value="5.110">Suzuki 4 stroke (15) TK</option>
-                        <option value="3.785">Suzuki 4 stroke (10) TK</option>
-                        <option value="5.413">Yamaha 4 stroke (15) TK</option>
-                        <option value="3.596">Yamaha 4 stroke (10) TK</option>
+                        <option value="5.10">Mercury 4 stroke (15) TK 5500 RPM</option>
+                        <option value="3.8">Mercury 4 stroke (10) TK 5500 RPM</option>
+                        <option value="26.1">Mercury OptiMax 2 stroke (75) TK 5500 RPM</option>
+                        <option value="5.10">Envinrude 4 stroke (15) TK 5500 RPM</option>
+                        <option value="3.8">Envinrude 4 stroke (10) TK 5500 RPM</option>
+                        <option value="7.95">Envinrude Etec 2 stroke (25) TK 5500 RPM</option>
+                        <option value="15.3">Envinrude Etec 2 stroke (50) TK 5500 RPM</option>
+                        <option value="4.90" >Honda 4 stroke (15) TK 5500 RPM</option>
+                        <option value="3.80">Honda 4 stroke (10) TK 5500 RPM</option>
+                        <option value="12.1">Honda BF40 4 stroke (40) TK 5500 RPM</option>
+                        <option value="4.90">Suzuki 4 stroke (15) TK 5300 RPM</option>
+                        <option value="3.8">Suzuki 4 stroke (10) TK 5700 RPM</option>
+                        <option value="8.40">Suzuki DF V-twin 4 stroke (25) TK 5500 RPM</option>
+                        <option value="5.413">Yamaha 4 stroke (15) TK 5500 RPM</option>
+                        <option value="3.596">Yamaha 4 stroke (10) TK 5500 RPM</option>
+                        <option value="22.2">Yamaha 70 HP 2 stroke (70) TK 5500 RPM</option>
                     </select>
                 </div>
                 <div class="form-group">
